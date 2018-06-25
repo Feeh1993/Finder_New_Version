@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menuremover_anunc"
+        android:title="Deletar"
+        android:titleCondensed="Deletar Anuncio"
+        android:icon="@drawable/ic_remove_circle_outline"
+        app:showAsAction="always"
+        />
+    <item android:id="@+id/menuajuda_anunc"
+        android:title="Deletar"
+        android:titleCondensed="Deletar Anuncio"
+        android:icon="@drawable/ic_action_help"
+        app:showAsAction="always"
+        />
+</menu>

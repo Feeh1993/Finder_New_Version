@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_name"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/bordas_laranja"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_weight="0.17"
+        android:text="Dicas do aplicativo"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lbl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_weight="0.17"
+        android:text="1 - Clique em qualquer imagem e altere a qualquer momento!"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lbl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_weight="0.17"
+        android:text="2 - Voce pode alterar apenas a Descrição do produto e sua validade"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lbl3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_weight="0.17"
+        android:text="3 - Para deletar Clique no icone - e delete seu anuncio,mas lembre-se , seu anuncio não poderá ser mais recuperado"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="27dp"
+        android:layout_weight="0.17"
+        android:background="@drawable/bordas_laranja"
+        android:text="Entendi"
+        android:textAlignment="center"
+        android:textColor="@color/tabBackground"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Anunciante.NovoAnuncio_Dados">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padd_10"
+                android:text="Clique e altere as imagens se quiser"
+                android:textAlignment="center"
+                android:textColor="@color/tabBackground" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_above="@+id/linearLayout3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <LinearLayout
+                    android:id="@+id/image_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btnImgProdAE"
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="6dp"
+                        android:background="@color/tabBackground_selected"
+                        android:scaleType="center"
+                        android:text="Button"
+                        android:textColor="@color/tabTitle_selected"
+                        app:srcCompat="@drawable/ic_add_a_photo" />
+
+                    <ImageButton
+                        android:id="@+id/btnImg2ProdAE"
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="6dp"
+                        android:background="@color/tabBackground_selected"
+                        android:scaleType="center"
+                        android:text="Button"
+                        android:textColor="@color/tabTitle_selected"
+                        app:srcCompat="@drawable/ic_add_a_photo" />
+
+                    <ImageButton
+                        android:id="@+id/btnImg3ProdAE"
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="6dp"
+                        android:background="@color/tabBackground_selected"
+                        android:scaleType="center"
+                        android:text="Button"
+                        android:textColor="@color/tabTitle_selected"
+                        app:srcCompat="@drawable/ic_add_a_photo" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <TextView
+                android:id="@+id/txtNomeProdAE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bordas_laranja"
+                android:ems="10"
+                android:hint="Nome do Produto"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/tabBackground"
+                app:layout_constraintBottom_toTopOf="@+id/edtDescricaoProd"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/txtPrecoProdAE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bordas_verdes"
+                android:ems="10"
+                android:hint="Preço R$"
+                android:inputType="numberDecimal"
+                android:textColor="#119b0e"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/spinnerDuracao"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+
+            <EditText
+                android:id="@+id/edtDescricaoProdAE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/bordas_laranja"
+                android:ems="10"
+                android:hint="Descreva brevemente aqui sobre o produto"
+                android:inputType="textMultiLine"
+                android:textColor="@color/tabBackground"
+                app:layout_constraintBottom_toTopOf="@+id/spinnerTipo"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+
+            <TextView
+                android:id="@+id/categoriaAE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/bordas_laranja"
+                android:textAlignment="textStart"
+                android:visibility="visible"
+                android:textColor="@color/tabBackground"
+                app:layout_constraintBottom_toTopOf="@+id/spinnersubcat"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/subcategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/bordas_laranja"
+                android:textAlignment="textStart"
+                android:visibility="visible"
+                android:textColor="@color/tabBackground"
+                app:layout_constraintBottom_toTopOf="@+id/btnSalvarProd"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+            <com.squareup.timessquare.CalendarPickerView
+                android:id="@+id/calviewNA"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_margin="8dp"
+
+                android:layout_marginBottom="40dp"
+                android:background="#FFFFFF"
+                app:layout_constraintBottom_toTopOf="@+id/btnSalvarCalendar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+
+            <Button
+                android:id="@+id/btnSalvarProdAE"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="5dp"
+                android:background="@color/tabBackground_selected"
+                android:text="Salvar Alterações"
+                android:textColor="@color/tabTitle_selected"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Anunciante.NovoAnuncio_Imagem">
+
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_marginTop="2dp"
+        android:text="Agora Vamos Adicionar Imagens ao seu anuncio!Clique nos icones de imagens e adicione 3 fotos"
+        android:textAlignment="center"
+        android:textColor="@color/tabBackground"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/image_container"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+        <ImageButton
+            android:id="@+id/btnImgProd"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="6dp"
+            android:background="@null"
+            android:scaleType="center"
+            android:text="Button"
+            android:textColor="@color/tabTitle_selected"
+            app:srcCompat="@drawable/ic_add_a_photo" />
+
+        <ImageButton
+            android:id="@+id/btnImg2Prod"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="6dp"
+            android:background="@null"
+            android:scaleType="center"
+            android:text="Button"
+            app:srcCompat="@drawable/ic_add_a_photo" />
+
+        <ImageButton
+            android:id="@+id/btnImg3Prod"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="6dp"
+            android:background="@null"
+            android:scaleType="center"
+            android:text="Button"
+            android:textColor="@color/tabTitle_selected"
+            app:srcCompat="@drawable/ic_add_a_photo" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Lembre-se! A Primeira imagem ficará como capa do seu produto!"
+        android:textColor="@color/tabBackground"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSalvarImg_NA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_container"
+        app:layout_constraintVertical_bias="0.107" />
+
+    <Button
+        android:id="@+id/btnSalvarImg_NA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/bordas_laranja"
+        android:text="Salvar Imagens"
+        android:textColor="@color/tabBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

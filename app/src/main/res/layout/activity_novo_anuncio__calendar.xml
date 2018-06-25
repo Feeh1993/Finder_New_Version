@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.Anunciante.NovoAnuncio_Calendar">
+
+
+    <com.squareup.timessquare.CalendarPickerView
+        android:id="@+id/calviewNA"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_margin="8dp"
+
+        android:layout_marginBottom="40dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnSalvarCalendar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSalvarCalendar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/bordas_laranja"
+        android:text="Salvar Validade"
+        android:textColor="@color/tabBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Selecione o periodo que seu anuncio irá durar!"
+        android:textAlignment="center"
+        android:textColor="@color/tabBackground"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/calviewNA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+</android.support.constraint.ConstraintLayout>
